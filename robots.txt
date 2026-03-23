@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://nscomforts.nanjangud.workers.dev/sitemap.xml
