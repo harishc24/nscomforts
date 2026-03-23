@@ -1,0 +1,19 @@
+name = "nscomforts"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+# Account ID (replace with your actual account ID from Cloudflare dashboard)
+account_id = "2053075a6edd43d231de968472ecf910"
+
+# Routes
+routes = [
+  { pattern = "nscomforts.nanjangud.workers.dev/*", zone_name = "" }
+]
+
+# Build configuration
+[build]
+command = ""
+
+# Upload rules - exclude node_modules and unnecessary files
+[upload]
+format = "service-worker"
