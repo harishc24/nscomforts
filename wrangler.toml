@@ -1,4 +1,26 @@
 name = "nscomforts"
-main = "worker.js"
+main = "./worker.js"
 compatibility_date = "2024-01-01"
 assets = { directory = "." }
+```
+
+Commit changes.
+
+---
+
+## Fix 2 — Change Deploy Command in Cloudflare
+
+| Field | Value |
+|---|---|
+| Build command | *(blank)* |
+| Deploy command | `npx wrangler deploy` |
+
+**Remove the `--assets=.` part** — the `wrangler.toml` already handles assets, so the command needs to be just `npx wrangler deploy`.
+
+---
+
+## Summary
+
+The error literally told us the fix:
+```
+Did you mean to set the main field to: main = "./worker.js"
